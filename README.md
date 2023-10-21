@@ -109,6 +109,7 @@ The goal is to develop an open-source Unity plugin that incorporates browser win
 
 - **Objective:** Prepare the development environment and tools needed for the project.
     - **Tasks:**
+        - [x] Learn C# basics.
         - [ ] Set up Unity and necessary plugins.
         - [ ] Learn 2D Unity basics.
         - [ ] Learn 3D Unity basics.
@@ -140,13 +141,21 @@ The goal is to develop an open-source Unity plugin that incorporates browser win
 
 # Timeline
 
-| Start Date | End Date   | Task                                                     | Duration | Status      |
-|------------|------------|----------------------------------------------------------|----------|-------------|
-| 10/10/2023 | 24/10/2023 | Phase 1: Research and Planning                           | 14 days  | In progress |
-| 25/10/2023 | 07/11/2023 | Phase 2: Part 1 - Setting Up the Development Environment | 13 days  | Pending     |
-| 08/10/2023 | 20/11/2023 | Phase 2: Part 2 - Learn Unity basics                     | 13 days  | Pending     |
-| 21/11/2023 | 20/12/2023 | Phase 3: Development of Core Functionality               | 30 days  | Pending     |
-| 21/12/2023 | 07/01/2024 | Phase 4: Development of Additional Features              | 17 days  | Pending     |
+| Start Date   | End Date       | Task                                                                     | Duration    | Status        |
+|--------------|----------------|--------------------------------------------------------------------------|-------------|---------------|
+| 10/10/2023   | **24/10/2023** | Phase 1: Research and Planning                                           | 14 days     | In progress   |
+| ------------ | ------------   | -----------------------------------------------------------------------  | ----------  | ------------- |
+| 25/10/2023   | 31/10/2023     | Phase 2: Part 1 - Learn C# basics and set up the Dev Environment         | 7 days      | Pending       |
+| 01/11/2023   | **07/11/2023** | Phase 2: Part 2 - Learn 2D Unity basics (Develop a 2D Project tbd)       | 7 days      | Pending       |
+| ------------ | ------------   | ------------------------------------------------------------------------ | ----------  | ------------- |
+| 08/11/2023   | 14/11/2023     | Phase 2: Part 3 - Learn 3D Unity basics (Develop a 3D Project tbd)       | 7 days      | Pending       |
+| 15/11/2023   | **21/11/2023** | Phase 2: Part 4 - Learn VR Unity basics (Develop a VR Project tbd)       | 7 days      | Pending       |
+| ------------ | ------------   | ------------------------------------------------------------------------ | ----------  | ------------- |
+| 22/11/2023   | **05/12/2023** | Phase 3: Development of Core Functionality (basic browser window)        | 14 days     | Pending       |
+| ------------ | ------------   | ------------------------------------------------------------------------ | ----------- | ------------- |
+| 06/12/2023   | **19/12/2024** | Phase 3: Development of Core Functionality (navigation features)         | 14 days     | Pending       |
+| ------------ | ------------   | ------------------------------------------------------------------------ | ----------- | ------------- |
+| 20/12/2023   | **09/01/2024** | Phase 4: Development of Additional Features                              | 14 days     | Pending       |
 
 <div style="border-top: azure 2px solid"></div>
 <div style="text-align: center">
