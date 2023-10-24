@@ -50,6 +50,12 @@ The goal is to develop an open-source Unity plugin that incorporates browser win
     - Open
       questions: What means overlying WebView? It's worth spend time studying this implementation? From my understanding
       it looks like we cannot place the browser in 3D spaces with this project
+      I've found a video of a guy using this package:
+      https://www.youtube.com/watch?v=5s4dATLDUOA
+      Here https://github.com/gree/unity-webview/issues/612#issuecomment-724541385 the creator said: This plugin places
+      a native WebView over the unity's rendering view and doesn't allow to place the webview in 3D space, so it is not
+      adequate for VR.
+      See also https://github.com/gree/unity-webview/issues/839
       <br/><br/>
 3. **UnityOculusAndroidVRBrowser**
     - Developer: Ian Philips
@@ -103,17 +109,41 @@ The goal is to develop an open-source Unity plugin that incorporates browser win
         - [x] Review existing open-source and closed-source browser plugins for Unity.
         - [x] Identify the limitations and gaps in the current solutions.
         - [x] Create a detailed project plan and timeline.
-        - [ ] Define the project requirements, the opensource project for the reference and the web rendering engine.
+        - [x] Define the project requirements and the way to proceed with the
+          development.
+    - **Notes:**
+      So far I see 2 ways, one is simple but with limitations and one is hard but more consistent:
+        1. **Simple Way (using Puppeteer):**
+            - **Pros:**
+                - Easier to implement.
+                    - Less technical knowledge required.
+            - **Cons:**
+                - Limited to static content (no support for audio, video, or interactive JavaScript).
+                - Performance may not be suitable for real-time applications.
 
-## Phase 2: Setting Up the Development Environment
+        2. **Hard Way (creating a native plugin with CEF):**
+            - **Pros:**
+                - Full support for dynamic web content, including audio, video, and JavaScript.
+                - Better performance and smoother integration with Unity.
+            - **Cons:**
+                - Complex implementation.
+                - Requires deep technical knowledge of CEF, Unity, and native plugins.
+                - More time-consuming to develop.
+    - **Phase Conclusion:**
+      We will use NuGet https://github.com/GlitchEnzo/NuGetForUnity and use it to install
+      Puppeteer https://github.com/uta-org/PuppeteerSharp.Unity3D
+
+      Use Puppeteer to take screenshots and render it on a texture
+
+## Phase 2: Learning Phase
 
 - **Objective:** Prepare the development environment and tools needed for the project.
     - **Tasks:**
         - [x] Learn C# basics.
-        - [ ] Set up Unity and necessary plugins.
-        - [ ] Learn 2D Unity basics.
+        - [x] Learn 2D Unity basics.
         - [ ] Learn 3D Unity basics.
         - [ ] Learn VR Unity basics.
+        - [ ] Learn additional technologies based on the implementation way we've decided.
 
 ## Phase 3: Development of Core Functionality
 
@@ -141,29 +171,25 @@ The goal is to develop an open-source Unity plugin that incorporates browser win
 
 # Timeline
 
-| Start Date   | End Date       | Task                                                               | Duration  | Status      |
-|--------------|----------------|--------------------------------------------------------------------|-----------|-------------|
-| 10/10/2023   | **24/10/2023** | Phase 1: Research and Planning                                     | 14 days   | In progress |
-| ------------ | ------------   | -------------------------------                                    | --------  | ----------  |
-| 25/10/2023   | 31/10/2023     | Phase 2: Part 1 - Learn C# basics and set up the Dev Environment   | 7 days    | Pending     |
-| 01/11/2023   | **07/11/2023** | Phase 2: Part 2 - Learn 2D Unity basics (Develop a 2D Project tbd) | 7 days    | Pending     |
-| ------------ | ------------   | -------------------------------                                    | --------  | ----------  |
-| 08/11/2023   | 14/11/2023     | Phase 2: Part 3 - Learn 3D Unity basics (Develop a 3D Project tbd) | 7 days    | Pending     |
-| 15/11/2023   | **21/11/2023** | Phase 2: Part 4 - Learn VR Unity basics (Develop a VR Project tbd) | 7 days    | Pending     |
-| ------------ | ------------   | -------------------------------                                    | --------  | ----------  |
-| 22/11/2023   | **05/12/2023** | Phase 3: Development of Core Functionality (basic browser window)  | 14 days   | Pending     |
-| ------------ | ------------   | -------------------------------                                    | --------  | ----------  |
-| 06/12/2023   | **19/12/2024** | Phase 3: Development of Core Functionality (navigation features)   | 14 days   | Pending     |
-| ------------ | ------------   | -------------------------------                                    | --------  | ----------  |
-| 20/12/2023   | **09/01/2024** | Phase 4: Development of Additional Features                        | 14 days   | Pending     |
+| Start Date   | End Date       | Task                                                                                  | Duration | Status      |
+|--------------|----------------|---------------------------------------------------------------------------------------|----------|-------------|
+| 10/10/2023   | **24/10/2023** | Phase 1 and 2: Research and Planning, Unity setup, learn C# and 2D development basics | 14 days  | Completed   |
+| ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
+| 25/10/2023   | 31/10/2023     | Phase 2: Learn 3D Unity basics                                                        | 7 days   | In progress |
+| 01/11/2023   | **07/11/2023** | Phase 2: Create a 3D project and render a browser screenshot using Puppeteer          | 7 days   | Pending     |
+| ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
+| 08/11/2023   | 14/11/2023     | Phase 2: Learn VR Unity basics (Develop a VR Project tbd)                             | 7 days   | Pending     |
+| 15/11/2023   | **21/11/2023** | Phase 2: Learn additional technologies required                                       | 7 days   | Pending     |
+| ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
+| 22/11/2023   | **05/12/2023** | Phase 3: Development of Core Functionality (basic browser window)                     | 14 days  | Pending     |
+| ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
+| 06/12/2023   | **19/12/2024** | Phase 3: Development of Core Functionality (navigation features)                      | 14 days  | Pending     |
+| ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
+| 20/12/2023   | **09/01/2024** | Phase 4: Development of Additional Features                                           | 14 days  | Pending     |
 
 <div style="border-top: azure 2px solid"></div>
-<div style="text-align: center">
-<h2>Conclusion</h2>
-</div>
-Creating a browser for Unity 3D scenes is a challenge that has seen several attempts, both in open and closed-source
-communities. While open-source projects such as Servo-Unity and Unity-Webview have aimed to bridge the gap, they have
-faced challenges in terms of active development and support. On the other hand, closed-source projects like the Embedded
-Browser and 3D WebView have managed to provide solutions, but at a cost.
 
-<div style="border-top: azure 2px solid; margin-top: 100px"></div>
+
+
+
+
