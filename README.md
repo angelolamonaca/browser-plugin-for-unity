@@ -175,17 +175,17 @@ The goal is to develop an open-source Unity plugin that incorporates browser win
 |--------------|----------------|---------------------------------------------------------------------------------------|----------|-------------|
 | 10/10/2023   | **24/10/2023** | Phase 1 and 2: Research and Planning, Unity setup, learn C# and 2D development basics | 14 days  | Completed   |
 | ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
-| 25/10/2023   | 31/10/2023     | Phase 2: Learn 3D Unity basics                                                        | 7 days   | In progress |
-| 01/11/2023   | **07/11/2023** | Phase 2: Create a 3D project and render a browser screenshot using Puppeteer          | 7 days   | Pending     |
+| 25/10/2023   | 31/10/2023     | Phase 2: Learn 3D Unity basics                                                        | 7 days   | Completed   |
+| 01/11/2023   | **07/11/2023** | Phase 2: Create a 3D project and render a browser screenshot using Puppeteer          | 7 days   | Completed   |
 | ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
-| 08/11/2023   | 14/11/2023     | Phase 2: Learn VR Unity basics (Develop a VR Project tbd)                             | 7 days   | Pending     |
-| 15/11/2023   | **21/11/2023** | Phase 2: Learn additional technologies required                                       | 7 days   | Pending     |
+| 08/11/2023   | 14/11/2023     | Phase 2: Learn VR Unity basics (Develop a VR Project tbd)                             | 7 days   | Completed   |
+| 15/11/2023   | **21/11/2023** | Phase 2: Learn additional technologies required                                       | 7 days   | Completed   |
 | ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
-| 22/11/2023   | **05/12/2023** | Phase 3: Development of Core Functionality (basic browser window)                     | 14 days  | Pending     |
+| 22/11/2023   | **05/12/2023** | Phase 3: Development of Core Functionality (basic browser window)                     | 14 days  | Completed   |
 | ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
-| 06/12/2023   | **19/12/2024** | Phase 3: Development of Core Functionality (navigation features)                      | 14 days  | Pending     |
+| 06/12/2023   | **19/12/2024** | Phase 3: Development of Core Functionality (navigation features)                      | 14 days  | Completed   |
 | ------------ | ------------   | -------------------------------                                                       | -------- | ----------  |
-| 20/12/2023   | **09/01/2024** | Phase 4: Development of Additional Features                                           | 14 days  | Pending     |
+| 20/12/2023   | **09/01/2024** | Phase 4: Development of Additional Features                                           | 14 days  | Completed   |
 
 <div style="border-top: azure 2px solid"></div>
 
